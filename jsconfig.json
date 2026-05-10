@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
+        "baseUrl": "src",
         "paths": {
             "~assets/*": [
                 "src/assets/*"
@@ -21,19 +21,19 @@
                 "src/*"
             ],
             "~CartItem/*": [
-                "src/components/CartItem/*"
+                "components/CartItem/*"
             ],
             "~constants/*": [
                 "src/constants/*"
             ],
             "~ProductsFilter/*": [
-                "src/containers/ProductsFilter/*"
+                "containers/ProductsFilter/*"
             ],
             "~FilterButton/*": [
-                "src/components/FilterButton/*"
+                "components/FilterButton/*"
             ],
             "~products/*": [
-                "src/assets/products/*"
+                "assets/products/*"
             ]
         }
     }

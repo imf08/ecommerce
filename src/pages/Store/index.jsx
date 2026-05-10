@@ -4,7 +4,7 @@ import Hero from "~containers/Hero";
 import ProductsFilter from "~containers/ProductsFilter";
 import { ProductContext } from "~contexts/ProductContext";
 
-const Home = () => {
+const Store = () => {
   const { products } = useContext(ProductContext);
   const [items, setItems] = useState([]);
   useEffect(() => {
@@ -46,4 +46,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default Store;

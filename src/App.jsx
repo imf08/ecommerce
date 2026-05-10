@@ -2,7 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "~containers/Footer";
 import Navbar from "~containers/Navbar";
 import Sidebar from "~containers/Sidebar";
-import Home from "~pages/Home";
+import HomePage from "~pages/HomePage";
+import Store from "~pages/Store";
+import ContactUs from "~pages/ContactUs";
 import NoPage from "~pages/NoPage";
 import ProductDetails from "~pages/ProductDetails";
 
@@ -11,7 +13,9 @@ const App = () => {
     <div className="overflow-hidden">
       <Navbar />
       <Routes>
-        <Route index path="/" element={<Home />} />
+        <Route index path="/" element={<HomePage />} />
+        <Route path="/store" element={<Store />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="*" element={<NoPage />} />
       </Routes>

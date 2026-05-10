@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <CartProvider>
       <ProductProvider>
         <React.StrictMode>
-          <BrowserRouter>
+          <BrowserRouter basename="/ecommerce">
             <App />
           </BrowserRouter>
         </React.StrictMode>
